@@ -1,8 +1,8 @@
 #Asking the user for their current age
-current_age = int ( input (“How old are you? ”) )
+#current_age = int ( input (“How old are you? ”) )
 
 #Calulating the futer age
-if current_age == 30:
+ current_age = 30:
 
     age = current_age + 27
 
