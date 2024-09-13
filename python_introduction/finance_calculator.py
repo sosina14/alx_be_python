@@ -6,7 +6,7 @@ expenses = float (input ( "Enter your total monthly expenses: " ))
 monthly_savings = float ( income - expenses )
 
 #Calulating projected savings:
-projected_savings = (monthly_savings * 12) + (monthly_savings * 12 * 0.05)
+projected_savings = monthly_savings * 12 + (monthly_savings * 12 * 0.05)
 
 #Output Results:
 print (f"Your monthly savings is ${monthly_savings}.")
