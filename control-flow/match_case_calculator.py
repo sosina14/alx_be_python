@@ -9,14 +9,14 @@ div = num1 / num2
 operation = input ("Choose the operation (+, -, *, /): ")
 match operation:
     case "+" :
-        print (f"The result {add}.")
+        print (f"The result [{add}].")
     case "-" :
-        print (f"The result {sub}.")
+        print (f"The result [{sub}].")
     case "*" :
-        print (f"The result {mul}.")
+        print (f"The result [{mul}].")
     case "/" :
         if num1 > num2 :
-            print (f"The result {div}.")
+            print (f"The result [{div}].")
         elif num2 == 0:
             print ("Cannot divide by zero")
         else:
