@@ -1,8 +1,9 @@
-number = int (input("Enter the size of the pattern: "))
-
-for i in range(1, number):
-  # Outer loop controls the number of rows
-  for j in range(1, number):
-    # Inner loop prints asterisks for each row
-    print("*", end="")
-  print("*")  # Move to a new line after each row of asterisks
+num = int (input("Enter the size of the pattern: "))
+i=0
+while i < num:
+    j= 0
+    for j in range(1, num):
+        print("*", end="")
+        j+=1
+    print("*")
+    i+=1
