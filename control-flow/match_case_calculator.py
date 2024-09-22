@@ -1,24 +1,22 @@
-num1 = int(input ("Enter the first number: ")) 
-num2 = int(input ("Enter the second number: "))
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+operation = input("Choose the operation (+, -, *, /): ")
 
-add = num1 + num2
-sub = num1 - num2
-mul = num1 * num2
-div = num1 / num2
-
-operation = input ("Choose the operation (+, -, *, /): ")
 match operation:
-    case "+" :
-        print (f"The result [{add}].")
-    case "-" :
-        print (f"The result [{sub}].")
-    case "*" :
-        print (f"The result [{mul}].")
-    case "/" :
-        if num1 > num2 :
-            print (f"The result [{div}].")
-        elif num2 == 0:
-            print ("Cannot divide by zero")
+    case "+":
+        result = num1 + num2
+        print(f"The result is {result}.")
+    case "-":
+        result = num1 - num2
+        print(f"The result is {result}.")
+    case "*":
+        result = num1 * num2
+        print(f"The result is {result}.")
+    case "/":
+        if num2 != 0:
+            result = num1 / num2
+            print(f"The result is {result}.")
         else:
-            print ("invalid input")
-
+            print("Cannot divide by zero.")
+    case _:
+        print("Invalid operation selected.")
