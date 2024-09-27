@@ -5,7 +5,7 @@ def display_menu():
     print("3. View List")
     print("4. Exit")
 
-def mainn():
+def main():
     shopping_list = []
     while True:
         display_menu()
@@ -24,5 +24,5 @@ def mainn():
             print("Invalid choice. Please try again.")
 
 #if __name__ == "__main__":
-mainn()
+    main()
 
