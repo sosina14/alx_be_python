@@ -12,17 +12,19 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == '1':
+            # Prompt for and add an item
             shopping_list.append(input ("Enter the name of the item : "))
         elif choice == '2':
+            # Prompt for and remove an item
             shopping_list.remove(input ("Enter the item to remove : "))
         elif choice == '3':
-           print(shopping_list)
+            # Display the shopping list
+            print(shopping_list)
         elif choice == '4':
             print("Goodbye!")
             break
         else:
             print("Invalid choice. Please try again.")
 
-#if __name__ == "__main__":
+if __name__ == "__main__":
     main()
-
