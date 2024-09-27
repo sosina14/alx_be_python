@@ -15,6 +15,7 @@ def perform_operation(num1,num2, operation ):
                 return "Number can't divide by zero"
             else:
                 return num1/num2
-    
+        case _:
+            'Error! Unrecognized operation
    # return (num1, num2, operation)
 #perform_operation(num1, num2, operation)
