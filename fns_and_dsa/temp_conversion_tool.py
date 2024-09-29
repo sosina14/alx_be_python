@@ -17,3 +17,6 @@ elif temp_type == 'c':
     print(f"{temperature}°C is {converted_temp:.2f}°F")
 else:
     print("Invalid temperature type. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
+except ValueError:
+        print("Invalid temperature. Please enter a numeric value.")
+
