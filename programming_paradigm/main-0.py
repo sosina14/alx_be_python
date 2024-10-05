@@ -3,7 +3,7 @@ from bank_account import BankAccount
 
 def main():
     account = BankAccount(100)  # Example starting balance
-    if len(sys.argv) < 2: 
+    if len(sys.argv) < 2:
         print("Usage: python main.py <command>:<amount>")
         print("Commands: deposit, withdraw, display")
         sys.exit(1)
@@ -20,9 +20,9 @@ def main():
         else:
             print("Insufficient funds.")
     elif command == "display":
-        account.displaybalance()
+        account.display_balance()
     else:
         print("Invalid command.")
 
-if name == "__main":
+if __name__ == "__main__":
     main()
