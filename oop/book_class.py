@@ -6,7 +6,7 @@ class Book:
         self.year = year
         
     def __del__(self):
-         Prints ("Deleting title of the book upon object deletion.")
+        Prints ("Deleting title of the book upon object deletion.")
          
 """String Representation (__str__): Returns a string in the format "(title) by (author), published in (year)"."""
 
