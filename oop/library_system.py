@@ -1,30 +1,30 @@
+# library_system.py
+
 # Base Class - Book
 class Book:
     def __init__(self, title, author):
         self.title = title
         self.author = author
 
-    def get_info(self):
+    def __str__(self):
         return f"Book: {self.title} by {self.author}"
 
 # Derived Class - EBook
 class EBook(Book):
     def __init__(self, title, author, file_size):
-        # Instead of using super(), call the Book class directly
-        Book.__init__(self, title, author)  # Initialize parent class attributes
-        self.file_size = file_size  # Unique to EBook
+        super().__init__(title, author)
+        self.file_size = file_size  # in KB
 
-    def get_info(self):
+    def __str__(self):
         return f"EBook: {self.title} by {self.author}, File Size: {self.file_size}KB"
 
 # Derived Class - PrintBook
 class PrintBook(Book):
     def __init__(self, title, author, page_count):
-        # Call the Book class directly to initialize inherited attributes
-        Book.__init__(self, title, author)  # Initialize parent class attributes
-        self.page_count = page_count  # Unique to PrintBook
+        super().__init__(title, author)
+        self.page_count = page_count
 
-    def get_info(self):
+    def __str__(self):
         return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}"
 
 # Composition - Library
