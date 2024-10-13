@@ -1,7 +1,7 @@
 import math
 class Shape:
     def area(self):
-        raise NotImplementedError("error")
+        raise NotImplementedError("The method should be overridden in subclasses")
 class Rectangle(Shape):
     def __init__(self, length , width):
         self.length = length
@@ -10,5 +10,6 @@ class Rectangle(Shape):
 class Circle(Shape):
     def __init__(self, radius):
         self.radius = radius
-        print(f"Area of the circule is {math.pi*math.pow(radius, 2)}")
+    def area(self):
+        return math.pi * (self.radius ** 2)
 
